@@ -1,0 +1,13 @@
+name: git
+version: 0.0.1
+inherits: debian
+type: service
+platform: debian
+description: wercker box with git installed
+keywords:
+  - github
+packages:
+  - git
+script: |
+  sudo apt-get update -y
+  sudo apt-get install git -y
